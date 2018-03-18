@@ -1,23 +1,38 @@
----
-layout: default
----
+<!DOCTYPE html>
+<html>
+    <head><title>chuma nnaji</title>
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/main.css">
+        <script type="text/javascript">
+            var _gaq = _gaq || [];
+            _gaq.push(['_setAccount', 'UA-28376514-1']);
+            _gaq.push(['_trackPageview']);
 
-<div class="home">
-
-  <h1 class="page-heading">Posts</h1>
-
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-
-</div>
+            (function() {
+             var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+             ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+             var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+             })();
+</script>
+     </head>
+     <body>
+         <div class="main">
+             <h1>chuma nnaji</h1>
+             <ul>
+                 <li><h2><a href="http://www.metro-start.com/">metro start</a> - <a href="https://github.com/metro-start/metro-start">(source)</a> <a href="https://github.com/metro-start/metro-start-web">(webservice)</a></h2></li>
+                 <li><h2><a href="https://chrome.google.com/webstore/detail/metro-notes/pbgjghojjpfodojfkacbeadclenelchc?hl=en&gl=US">metro notes</a> - <a href="https://github.com/chustar/metro-notes">(source)</a></h2></li>
+                 <li><h2><a href="http://fashun.azurewebsites.net">fashun</a> - <a href="https://github.com/chustar/fashun">(source)</a></h2></li>
+                 <li><h2><a href="http://medicationbuddy.appspot.com">medbuddy</a></h2></li>
+                 <li><h2><a href="http://nowreadable.com">now readable</a></h2></li>
+                 <li><h2 class="dev">stand right here</h2></li>
+                 <li><h2 class="dev">photo canvas</h2></li>
+                 <li><h2 class="dev">i'm feeling...</h2></li>
+             </ul>
+             <div class="social">
+                 <ul>
+                     <li><h3><a href="https://twitter.com/#!/chustar">twitter</a></h3></li>
+                     <li><h3><a href="https://github.com/chustar">github</a></h3></li>					 </ul>
+             </div>
+         </div>
+     </body>
+ </html>
